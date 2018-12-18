@@ -1,6 +1,10 @@
-# TensorFlow Object Detection on the Raspberry Pi
+# ECE435 Lab 7 IoT Car
 
-## Steps
+## Steps for Distance detection with CAN to IP Gateway with two Arduinos
+1. Flash the Arduino without the CAN2IP shield using arduino.ino
+2. Flash the Arduino with the CAN2IP shield using CAN2IP.ino
+
+## Steps for TensorFlow Object Detection on the Raspberry Pi
 ### 1. Update the Raspberry Pi
 ```sh
 sudo apt-get update
@@ -54,7 +58,7 @@ sudo reboot now # for some reason the Pi needs to be rebooted for tf to work
 mkdir tensorflow1
 cd tensorflow1
 git clone --recurse-submodules https://github.com/tensorflow/models.git
-sudo vim ~/.bashrc
+sudo nano ~/.bashrc
 export PYTHONPATH=$PYTHONPATH:/home/pi/tensorflow1/models/research:/home/pi/tensorflow1/models/research/slim
 cd /home/pi/tensorflow1/models/research
 protoc object_detection/protos/*.proto --python_out=.

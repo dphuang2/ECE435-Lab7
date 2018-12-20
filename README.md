@@ -1,7 +1,7 @@
 # ECE435 Lab 7 IoT Car
 
 ## Steps for Distance detection with CAN to IP Gateway with two Arduinos
-1. Flash the Arduino without the CAN2IP shield using arduino.ino
+1. Flash the Arduino with the sensor sensor using sonar.ino
 2. Flash the Arduino with the CAN2IP shield using CAN2IP.ino
 
 ## Steps for TensorFlow Object Detection on the Raspberry Pi
